@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+ <title>صور فوق بعضها</title>
+ 
+ <style>
+ 	body {
+ 	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPb0lS9pmmiTV_juS60Ejp-2QU5W4L1MyU2w&usqp=CAU');
+   width: 100%;
+  height: 100%;
+  } 
+  .container {
+   display: flex;
+   flex-wrap: wrap;
+   
+   justify-content: center;
+   align-items: center;
+   
+  }
+  .box {
+   width: 100%;
+   height: 60px;
+   margin: 5px;
+   position: relative;
+   overflow: hidden;
+   
+  }
+  .box img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+  }
+  .box a {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   
+   justify-content: center;
+   color: #fff;
+   font-weight: bold;
+   text-decoration: none;
+   
+   background-color: rgba(0,0,0,0.5);
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out;
+  }
+  .box:hover a {
+   opacity: 0;
+   
+  }
+ </style>
+</head>
+<body>
+ <div class="container">
+ 	
+  <div class="box">
+  	
+   <img src="https://telegra.ph/file/b9a5686dfeff9d797a2e6.jpg" alt="صورة 1">
+   <a href="go:q1" target="_blank"></a>
+  </div>
+  <div class="box">
+   <img src="https://telegra.ph/file/c7d1381e50b9e886201ab.jpg" alt="صورة 2">
+   <a href="https://example.com" target="_blank"></a>
+  </div>
+  <div class="box">
+   <img src="https://telegra.ph/file/22ade1b12b1df1262dabc.jpg" alt="صورة 3">
+   <a href="https://example.com" target="_blank"></a>
+  </div>
+  <div class="box">
+   <img src="https://telegra.ph/file/4601267524a1442f28032.jpg" alt="صورة 4">
+   <a href="https://example.com" target="_blank"></a>
+   </div>
+   <div class="box">
+   <img src="https://telegra.ph/file/e10422dbb61ed43d8f005.jpg" alt="صورة 5">
+   <a href="https://example.com" target="_blank"></a>
+   
+   
+   
+   
+   
+  </div>
+  
+ </div>
+ 
+</body>
+
+</html>
